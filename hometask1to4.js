@@ -9,7 +9,7 @@ return length * width;
 
 alert('The area of your rectangle is ' + area(length, width));
 
-// 2. Дана функція squareCubeSum. Вона вимагає першим параметром число, другим функцію, котра підносить число до квадрату, а третім параметром функцію, яка підносить до куба.
+// 2. Дана функція squareCubeSum. Вона вимагає першим параметром число, другим функцію, котра підносить число до квадрату, а третім параметром - функцію, яка підносить до куба.
 // Ці функції є як Function Declaration - squared, cubed. Нехай функція squareCubeSum поверне суму квадрата и куба числа.
 
 let yourNum = prompt('Enter your number');
