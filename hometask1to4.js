@@ -1,7 +1,7 @@
 // 1. Знайти площу прямокутника.
 
-let length = prompt('Enter the length of your rectangle')
-let width = prompt('Enter the width of your rectangle')
+let length = prompt('Enter the length of your rectangle');
+let width = prompt('Enter the width of your rectangle');
 
 function area (length, width) {
 return length * width;
