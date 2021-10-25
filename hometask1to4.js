@@ -41,7 +41,22 @@ while (true) {
  alert ('Next time you click the button, this number ' + infinitePlus() + ' will be increased by the second number you have entered before');
 }
 
-// 4. 
+// 4. Написать функцію, яка приймає стать людини ('M','F') у виді рядка, результат функції повертає рядок "You're male", "You're female" або "You're sex is undefined"
 
+let sex = prompt('Enter your sex (M/F)')
+
+alert (mF())
+
+function mF() {
+    if (sex === 'M') {
+    return ("You're male")
+}
+else if (sex ==='F') {
+        return ("You're female");
+}
+else {
+    return ("You're sex is undefined")
+}
+}
 
         
