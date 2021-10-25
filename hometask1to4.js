@@ -43,19 +43,19 @@ while (true) {
 
 // 4. Написать функцію, яка приймає стать людини ('M','F') у виді рядка, результат функції повертає рядок "You're male", "You're female" або "You're sex is undefined"
 
-let sex = prompt('Enter your sex (M/F)')
+let sex = prompt('Enter your sex (M/F)');
 
-alert (mF())
+alert (mF());
 
 function mF() {
     if (sex === 'M') {
-    return ("You're male")
+    return ("You're male");
 }
 else if (sex ==='F') {
         return ("You're female");
 }
 else {
-    return ("You're sex is undefined")
+    return ("You're sex is undefined");
 }
 }
 
