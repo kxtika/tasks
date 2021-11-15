@@ -1,0 +1,81 @@
+//Масив із  функією введення, виведення та видалення елементів
+let shelf = ['banana', 'apple', 'pepper', 'salt'];
+
+function delEnd() {
+  shelf.pop()
+}
+
+function addEnd() {
+  add = prompt('Add an element to the back of shelf');
+  shelf.push(add);
+}
+
+function delBeg() {
+  shelf.shift()
+}
+
+function addBeg() {
+  add = prompt('Add an element to the front of shelf');
+  shelf.unshift(add);
+}
+
+function output() {
+  show = alert(shelf);
+}
+
+while (true) {
+  
+const action = prompt("Choose what to do with elements in shelf (pop/push, shift/unshift, showElements)");
+
+if (action == 'pop') {
+  delEnd()
+}
+else if (action == 'push'){
+  addEnd()
+}
+else if (action == 'shift'){
+  delBeg()
+}
+else if (action == 'unshift'){
+  addBeg()
+}
+else if (action == 'showElements'){
+  output()
+}
+}
+
+//Порахувати площу прямокутника якщо введено дві сторони, і площу квадрата - якщо одна
+
+let length = prompt('Enter the length of your rectangle')
+let width = prompt('Enter the width of your rectangle')
+
+function areaSq(width) {
+      return width * 2;
+}
+function areaSq1(length) {
+      return length * 2;
+}
+
+function areaRec (length, width) {
+   return length * width;
+}
+if (length > 0 && width > 0) {
+   alert('The area of your rectangle is ' + areaRec(length, width));
+}
+else if (length = 0) {
+    alert('The area of your square is ' + areaSq(width));
+}
+else {
+    alert('The area of your square is ' + areaSq1(length));
+}
+//Порахувати суму чиселу діапазоні
+
+let x = +prompt("Введіть початок діапазону");
+let y = +prompt("Введіть кінець діапазону");
+let sum = 0;
+ 
+while(x <= y){       
+       sum+=x;  
+       x++;
+    }
+alert(sum);
