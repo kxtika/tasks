@@ -68,7 +68,7 @@ else if (length = 0) {
 else {
     alert('The area of your square is ' + areaSq1(length));
 }
-//Порахувати суму чиселу діапазоні
+//Порахувати суму чисел у діапазоні
 
 let x = +prompt("Введіть початок діапазону");
 let y = +prompt("Введіть кінець діапазону");
