@@ -1,6 +1,7 @@
 //Масив із  функією введення, виведення та видалення елементів
 let shelf = ['banana', 'apple', 'pepper', 'salt'];
 
+// функції, що дозволяють вносити, видаляти та виводити елементи (pop/push - в кінці масиву, shift/unshift - напочатку)
 function delEnd() {
   shelf.pop()
 }
@@ -22,10 +23,12 @@ function addBeg() {
 function output() {
   show = alert(shelf);
 }
-
+// цикл, який постійно запитуватиме у користувача дію, яку він хоче виконати
 while (true) {
   
 const action = prompt("Choose what to do with elements in shelf (pop/push, shift/unshift, showElements)");
+
+//умови виконання функцій
 
 if (action == 'pop') {
   delEnd()
@@ -49,23 +52,24 @@ else if (action == 'showElements'){
 let length = prompt('Enter the length of your rectangle')
 let width = prompt('Enter the width of your rectangle')
 
+//функції, які рахують площу квадрата або прямокутника
 function areaSq(width) {
       return width * 2;
 }
 function areaSq1(length) {
       return length * 2;
 }
-
 function areaRec (length, width) {
    return length * width;
 }
+//якщо дві величини більші за нуль, буде викликано функцію, яка рахує площу прямокутника, якщо довжина або ширина = 0, буде пораховано площу квадрату
 if (length > 0 && width > 0) {
    alert('The area of your rectangle is ' + areaRec(length, width));
 }
 else if (length = 0) {
     alert('The area of your square is ' + areaSq(width));
 }
-else {
+else if (width = 0) {
     alert('The area of your square is ' + areaSq1(length));
 }
 //Порахувати суму чисел у діапазоні
@@ -73,6 +77,8 @@ else {
 let x = +prompt("Введіть початок діапазону");
 let y = +prompt("Введіть кінець діапазону");
 let sum = 0;
+
+ //поки х менше за у, до х додаватиметься одиниця, до sum додаватиметься кожне нове значення х
  
 while(x <= y){       
        sum+=x;  
